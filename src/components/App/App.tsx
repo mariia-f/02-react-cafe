@@ -2,7 +2,7 @@ import { useState } from "react";
 import CafeInfo from "../CafeInfo/CafeInfo";
 import Notification from "../Notification/Notification";
 import type { Votes, VoteType } from "../../types/votes";
-import VoteStatus from "../VoteStatus/VoteStatus";
+import VoteStats from "../VoteStats/VoteStats";
 import css from "./App.module.css";
 import VoteOptions from "../VoteOptions/VoteOptions";
 
@@ -40,7 +40,7 @@ export default function App() {
         canReset={totalVotes !== 0 ? true : false}
       />
       {totalVotes !== 0 ? (
-        <VoteStatus
+        <VoteStats
           votes={votes}
           totalVotes={totalVotes}
           positiveRate={positiveRate}
