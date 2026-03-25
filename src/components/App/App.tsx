@@ -4,7 +4,7 @@ import Notification from "../Notification/Notification";
 import type { Votes, VoteType } from "../../types/votes";
 import VoteStatus from "../VoteStatus/VoteStatus";
 import css from "./App.module.css";
-import VoteOption from "../VoteOption/VoteOption";
+import VoteOptions from "../VoteOptions/VoteOptions";
 
 export default function App() {
   const [votes, setVotes] = useState<Votes>({
@@ -34,7 +34,7 @@ export default function App() {
   return (
     <div className={css.app}>
       <CafeInfo />
-      <VoteOption
+      <VoteOptions
         onVote={handleVote}
         onReset={resetVotes}
         canReset={totalVotes !== 0 ? true : false}

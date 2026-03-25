@@ -1,4 +1,4 @@
-import css from "./VoteOpiton.module.css";
+import css from "./VoteOpitons.module.css";
 import type { VoteType } from "../../types/votes";
 
 interface VoteOptionsProps {
@@ -7,7 +7,7 @@ interface VoteOptionsProps {
   canReset: boolean;
 }
 
-export default function VoteOption({
+export default function VoteOptions({
   onVote,
   onReset,
   canReset,
